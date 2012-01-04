@@ -1,11 +1,5 @@
-/*
-  DigitalReadSerial
- Reads a digital input on pin 2, prints the result to the serial monitor 
- 
- This example code is in the public domain.
- */
- int flag =0
- ;
+
+ int flag =0 ;
 
 void setup() {
   Serial.begin(9600);
