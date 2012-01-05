@@ -6,8 +6,7 @@ programming language. This app will show a qt dialog box on to make LED ON
 
 There are two sets of program :
 
- #. Micro-controller side a.k.a Arduino board (C Program to receive commands
-from Computer over USB/Serial )
+ #. Micro-controller side a.k.a Arduino board (C Program to receive commands from Computer over USB/Serial )
 
  #. Computer side (Python script for qt-window and serial communication)
 
@@ -20,8 +19,7 @@ Pre-Requisite
 
  #. Install PyQt
 
- #. Arduino IDE (AVR-GCC and other dependencies, better to use package
-manager to handle dependencies)
+ #. Arduino IDE (AVR-GCC and other dependencies, better to use package manager to handle dependencies)
 
  #. Arduino board connected through USB cable.
 
