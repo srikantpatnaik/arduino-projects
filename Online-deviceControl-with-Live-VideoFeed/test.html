@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+
+import cgi,serial,time
+import cgitb; cgitb.enable()  # for troubleshooting
+print "Content-type: text/html"
+
+print """
+<html>
+<head><title>Online Arduino LED Control</title></head>
+<body>
+<h3> Online Arduino LED Control </h3>
+"""
+
+
+form = cgi.FieldStorage()
+message = form.getvalue("message", "(no message)")
+
+if message=='1':
+     awrite = serial.Serial('/dev/ttyACM0',9600,timeout=0.25)
+     awrite.write('1')
+     awrite.close()
+
+if message=='0':
+    awrite = serial.Serial('/dev/ttyACM0',9600,timeout=0.25)
+    awrite.write('0')
+    awrite.close()
+
+
+
+print """
+<p>Previous command sent to Arduino was :  %s    ('1' means ON , '0' means OFF)</p>
+<p><form method="post" action="test.html"></p>
+<button type="button" onclick="message.value='1';form.submit()">LED ON</button>
+<button type="button" onclick="message.value='0';form.submit()">LED OFF</button>
+<p><input type="hidden" name="message"/></p>
+</form>
+<p>
+<object width="640" height="480"><param name="movie" value="http://localhost:8081">
+<embed src="http://localhost:8081" width="640" height="480">
+</embed></object>
+</body>
+</html>
+"""% cgi.escape(message)

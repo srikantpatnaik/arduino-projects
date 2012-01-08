@@ -6,8 +6,7 @@ programming language. This app will show a qt dialog box on to make LED ON
 
 There are two sets of program :
 
- #. Micro-controller side a.k.a Arduino board (C Program to receive commands
-from Computer over USB/Serial )
+ #. Micro-controller side a.k.a Arduino board (C Program to receive commands from Computer over USB/Serial )
 
  #. Computer side (Python script for qt-window and serial communication)
 
@@ -28,7 +27,15 @@ manager to handle dependencies)
 
 Usage
 -----
-The qt dialog box hence designed in Qt-Designer is saved as a XML script
+First of all write the *DigitalReadSerial.pde* to Arduino board.
+
+Change the permission of serial port (one which is connected to Arduino)
+
+:: 
+ 
+    sudo chmod 666 /dev/ttyACM0
+
+The qt dialog box designed in Qt-Designer is saved as a XML script
 (LED-ON-OFF.ui). Convert this XML file to Python file using :
 
 command::
@@ -36,6 +43,7 @@ command::
      pyuic4 LED-ON-OFF.ui > test_ui.py
 
 After conversion one can remove LED-ON-OFF.ui.
+
 Then create a file *test.py* with the given content and run it as :
 
 ::
