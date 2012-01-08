@@ -19,8 +19,7 @@ Pre-Requisite
 
  #. Install PyQt
 
- #. Arduino IDE (AVR-GCC and other dependencies, better to use package
-manager to handle dependencies)
+ #. Arduino IDE (AVR-GCC and other dependencies, better to use package manager to handle dependencies)
 
  #. Arduino board connected through USB cable.
 
