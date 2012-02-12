@@ -3,14 +3,14 @@
 
 void setup() {
   Serial.begin(9600);
-  pinMode(13,OUTPUT);
+  pinMode(12,OUTPUT);
 }
 
 void loop()
 { 
 
   int sensorValue=Serial.read();
-  digitalWrite(13,flag);
+  digitalWrite(12,flag);
  
   if(sensorValue== '1')
   flag=1;
