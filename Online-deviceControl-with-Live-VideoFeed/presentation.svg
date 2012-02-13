@@ -25,10 +25,10 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.5430929"
-     inkscape:cx="287.3251"
-     inkscape:cy="234.67608"
-     inkscape:current-layer="layer1"
+     inkscape:zoom="3.5020976"
+     inkscape:cx="112.05671"
+     inkscape:cy="702.63064"
+     inkscape:current-layer="layer3"
      id="namedview5205"
      showgrid="false"
      showguides="true"
@@ -11686,7 +11686,7 @@
          sodipodi:role="line"
          x="23.174389"
          y="62.834057"
-         id="tspan4625">invokes server only when change in frame is detected or motion detected.</tspan></text>
+         id="tspan4625">invokes server only when change in frame or any motion is detected.</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono Italic"
@@ -15693,7 +15693,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="control"
-     style="display:inline">
+     style="display:none">
     <rect
        y="83.344398"
        x="476.76093"
@@ -15754,15 +15754,15 @@
        id="rect23443"
        style="opacity:0.26754384;fill:#782121;fill-opacity:1;stroke:#000000;stroke-width:1.11451888;stroke-opacity:1;display:inline" />
     <rect
-       y="11.426939"
-       x="9.9322271"
-       height="94.663437"
-       width="201.13225"
+       y="11.463776"
+       x="9.9690638"
+       height="103.15606"
+       width="205.05618"
        id="rect28005"
-       style="opacity:0.26754384;fill:#782121;fill-opacity:1;stroke:#000000;stroke-width:1.36364245;stroke-opacity:1" />
+       style="opacity:0.26754384;fill:#782121;fill-opacity:1;stroke:#000000;stroke-width:1.43731618;stroke-opacity:1" />
     <rect
-       y="53.399693"
-       x="393.41846"
+       y="50.16914"
+       x="395.03372"
        height="73.352165"
        width="171.36583"
        id="rect46159"
